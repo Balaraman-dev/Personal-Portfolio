@@ -82,12 +82,35 @@ import kubernetes from '../app/assets/svg/skills/kubernetes.svg'
 import linux from '../app/assets/svg/skills/linux.svg'
 import sqlalchemy from '../app/assets/svg/skills/sqlalchemy.svg'
 import fastapi from '../app/assets/svg/skills/fastapi.svg'
+import express from '../app/assets/svg/skills/express.svg'
+import github from '../app/assets/svg/skills/github.svg'
+import nodejs from '../app/assets/svg/skills/nodejs.svg'
+import vscode from '../app/assets/svg/skills/vscode.svg'
+import npm from '../app/assets/svg/skills/npm.svg'
+import netlify from '../app/assets/svg/skills/netlify.png'
+import render from '../app/assets/svg/skills/render.png'
+import expresslog from '../app/assets/svg/skills/expresslog.png'
 
 
 
 export const skillsImage = (skill) => {
   const skillID = skill.toLowerCase();
+
   switch (skillID) {
+    case 'netlify':
+      return netlify;
+    case 'render':
+      return render;
+    case 'expressjs':
+      return expresslog;
+    case 'expressjs':
+      return expresslog;
+    case 'github':
+      return github;
+    case 'nodejs':
+      return nodejs;    
+    case 'vs code':
+      return vscode;   
     case 'gcp':
       return gcp;
     case 'html':
@@ -112,7 +135,7 @@ export const skillsImage = (skill) => {
       return nextJS;
     case 'nuxt js':
       return nuxtJS;
-    case 'react':
+    case 'reactjs':
       return react;
     case 'svelte':
       return svelte;
@@ -136,7 +159,7 @@ export const skillsImage = (skill) => {
       return mysql;
     case 'postgresql':
       return postgresql;
-    case 'tailwind':
+    case 'tailwindcss':
       return tailwind;
     case 'vitejs':
       return vitejs;

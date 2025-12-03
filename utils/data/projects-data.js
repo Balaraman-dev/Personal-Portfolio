@@ -1,52 +1,52 @@
 export const projectsData = [
     {
         id: 1,
-        name: 'AI Powered Financial App',
-        description: "Me and my team built an AI-powered financial mobile application. I have developed API using Express, Typescript, OpenAI, AWS, and MongoDB. Used OTP via AWS SES, Google, and Facebook for the authentication system. Built AI assistants using OpenAI's latest model and trained using our dataset. Voice messages are converted to text using AWS Transcribe. The app fetches data from Google Sheets and generates a PDF term sheet, sent via AWS SES.",
-        tools: ['Express', 'MongoDB', 'OpenAI API', 'AWS SES', 'AWS S3', 'Node Mailer', 'Joi', 'Puppeteer', 'EC2', 'PM2', 'Nginx'],
-        role: 'Backend Developer',
+        name: 'LLM Powered EduPlanner ',
+        description: "  Built a LLM-powered system that automatically generates personalized lesson plans. Designed and implemented three core agents — Evaluator, Optimizer, and Analyst  coordinated multi-agent intelligence. Developed intelligent workflows where the Evaluator agent validates clarity and curriculum alignment, the Optimizer agent refines the instructional structure, and the Analyst agent interprets the syllabus content. ",
+        tools: [ 'Python', 'LargeLanguage Model(LLMs)', 'Multi-Agent System', 'NLP Pipelines', ],
+        role: 'Team Lead - Developer',
         code: '',
         demo: '',
+        giturl: 'https://github.com/Balaraman-dev/Edu-Planner',
+        liveurl: '',
     },
+
     {
         id: 2,
-        name: 'Travel Agency App',
-        description: 'I have designed and developed a full-stack web app for 2Expedition, a travel agency in Armenia. I created the UI using NextJS, Typescript, MUI, TailwindCSS, Google Maps, Sun-Editor, and React Slick. The app supports multiple languages and currencies. I developed the API using NestJS, Typescript, MySQL, TypeORM, AWS, and Nodemailer. I deployed the front-end app to AWS Amplify and the back-end app to AWS EC2.',
-        tools: ['NextJS', 'Tailwind CSS', "Google Maps", "NestJS", "TypeScript", "MySQL", "AWS S3", "Sun-Editor", "Gmail Passkey"],
+        name: ' Expenso  - Personal Expense Tracker ',
+        description: 'Developed expense tracking web application, featuring real-time data visualization and responsive serverside views with Handlebars .To integrating JWT, bcrypt encryption, and RESTful APIs for user management and transaction processing, ensuring robust data security . To implemented advanced features like transaction categorization, budget analysis, and goal progress tracking.',
+        tools: ['Javascript', 'Node.js', 'Express.js', 'MongoDB', 'Handlebars', 'SSR'],
         role: 'Full Stack Developer',
         code: '',
         demo: '',
+        giturl: 'https://github.com/Balaraman-dev/Expenso',
+        liveurl: 'https://expenso-tt28.onrender.com/',
+        deployed: 'Render',
     },
+     
     {
         id: 3,
-        name: 'AI Powered Real Estate',
-        description: 'My team built an AI-based real estate app using Replicate API and OpenAI. We used Express, Typescript, OpenAI, Replicate, Stripe, and Mongoose to develop the API. We utilized NextJS, Formik, TailwindCSS, and other npm libraries for the UI. We have trained multiple AI assistants using the latest GPT model and integrated Replicate API for image processing. We added role-based auth, subscription plans, Cron job scheduling, and payment integration with Stripe.',
-        tools: ['React', 'Bootstrap', 'SCSS', 'Stripe', 'Express', 'TypeScript', 'MongoDB', 'Azure Blob', 'OpenAI API', 'Replicate AI', 'Cronjob', 'JWT'],
+        name: ' Luxera - An e-Commerce Platform',
+        description: ' Architected a dynamic e-commerce platform featuring to Integrated RESTful APIs for real-time product updates, modular components, and a seamless shopping experience .Implemented responsive,Mobile-first UI with a component-based architecture, while ensuring cross-device compatibility and enhanced user engagement.',
+        tools: ['Vite', 'React.js', 'TailwindCSS', 'REST API', ],
         code: '',
-        role: 'Full Stack Developer',
+        role: 'Frontend Developer',
         demo: '',
+        giturl: 'https://github.com/Balaraman-dev/Luxera',
+        liveurl: 'https://luxera.netlify.app/',
+        deployed: 'Netlify ',
+
     },
     {
         id: 4,
-        name: 'Newsroom Management',
-        description: "My team and I developed a newspaper management dashboard application called Newsroom Management. As a front-end developer, I worked on creating the dashboard using NextJS, Material UI, Redux, Calendar, and other necessary npm libraries. We used React Redux to manage the application's state and React-hook-form and Sun Editor to handle forms.",
-        tools: ['NextJS', 'Material UI', 'Redux', 'Sun Editor', "Calendar"],
+        name: ' WildLens - Tourism Booking Platform',
+        description: " Developed an interactive wildlife tour exploration and booking platform. Featuring 5+ sanctuary destinations with image galleries, and an intuitive online reservation system with real-time availability and booking confirmation. Designed a responsive, user-friendly interface with advanced filtering options and optimized state management using hooks improving navigation efficiency and enhancing tour discovery ",
+        tools: ['JavaScript', 'React.js', 'TailwindCSS', 'REST API'],
         code: '',
         demo: '',
-        role: 'Full Stack Developer',
+        role: 'Frontend Developer',
+         giturl: 'https://github.com/Balaraman-dev/WildLens-Toursplatform',
+        liveurl: 'https://wildlens-toursplatform.netlify.app/',
+        deployed: 'Netlify ',
     }
 ];
-
-
-// Do not remove any property.
-// Leave it blank instead as shown below
-
-// {
-//     id: 1,
-//     name: '',
-//     description: "",
-//     tools: [],
-//     role: '',
-//     code: '',
-//     demo: '',
-// },

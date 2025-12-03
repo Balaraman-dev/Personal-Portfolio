@@ -1,7 +1,7 @@
 // @flow strict
 
 import { experiences } from "@/utils/data/experience";
-import Image from "next/image";
+import React from 'react'
 import { BsPersonWorkspace } from "react-icons/bs";
 import experience from '../../../assets/lottie/code.json';
 import AnimationLottie from "../../helper/animation-lottie";
@@ -10,12 +10,10 @@ import GlowCard from "../../helper/glow-card";
 function Experience() {
   return (
     <div id="experience" className="relative z-50 border-t my-12 lg:my-24 border-[#25213b]">
-      <Image
+      <img
         src="/section.svg"
         alt="Hero"
-        width={1572}
-        height={795}
-        className="absolute top-0 -z-10"
+        className="absolute top-0 -z-10 w-full"
       />
 
       <div className="flex justify-center my-5 lg:py-8">
@@ -42,15 +40,13 @@ function Experience() {
                 experiences.map(experience => (
                   <GlowCard key={experience.id} identifier={`experience-${experience.id}`}>
                     <div className="p-3 relative">
-                      <Image
+                      <img
                         src="/blur-23.svg"
                         alt="Hero"
-                        width={1080}
-                        height={200}
-                        className="absolute bottom-0 opacity-80"
+                        className="absolute bottom-0 opacity-80 w-full"
                       />
                       <div className="flex justify-center">
-                        <p className="text-xs sm:text-sm text-[#16f2b3]">
+                        <p className="text-xs sm:text-lg text-[#16f2b3] uppercase">
                           {experience.duration}
                         </p>
                       </div>
@@ -59,12 +55,13 @@ function Experience() {
                           <BsPersonWorkspace size={36} />
                         </div>
                         <div>
-                          <p className="text-base sm:text-xl mb-2 font-medium uppercase">
+                          <p className="text-base sm:text-xl mb-2 font-medium uppercase text-pink-500">
                             {experience.title}
                           </p>
-                          <p className="text-sm sm:text-base">
+                          <p className="text-sm sm:text-base font-semibold">
                             {experience.company}
                           </p>
+                          <p className="text-sm sm:text-base indent-10 py-2 text-justify ">{experience.description}</p>
                         </div>
                       </div>
                     </div>

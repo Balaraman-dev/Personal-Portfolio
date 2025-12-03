@@ -1,20 +1,9 @@
 export const experiences = [
   {
     id: 1,
-    title: 'Software Engineer I',
-    company: "Teton Private Ltd.",
-    duration: "(Jan 2022 - Present)"
+    title: ' Fullstack Developer Intern',
+    company: "Hifi11 Technologies Pvt Ltd",
+    duration: " Jul - Aug 2025 ",
+    description: " I gained hands-on experience working with WordPress to create, manage, and optimize web content while ensuring a smooth user experience. I also performed SEO analysis to enhance website performance, improve search rankings, and increase organic visibility. Through effective on-page and technical SEO practices, I contributed to boosting overall site engagement and discoverability.",
   },
-  {
-    id: 2,
-    title: "FullStack Developer",
-    company: "Fiverr (freelance)",
-    duration: "(Jun 2021 - Jan 2022)"
-  },
-  {
-    id: 3,
-    title: "Self Employed",
-    company: "Code and build something in everyday.",
-    duration: "(Jan 2018 - Present)"
-  }
 ]
