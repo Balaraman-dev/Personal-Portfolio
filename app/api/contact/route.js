@@ -57,6 +57,7 @@ export async function POST(request) {
   try {
     const payload = await request.json();
     const { name, email, message: userMessage } = payload || {};
+    console.log(name, email, userMessage);
 
     if (!process.env.EMAIL_ADDRESS || !process.env.GMAIL_PASSKEY) {
       return NextResponse.json({ success: false, message: 'Server mail settings are not configured.' }, { status: 500 });

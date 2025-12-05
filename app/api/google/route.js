@@ -5,7 +5,7 @@ export const runtime = 'nodejs';
 
 export async function POST(request) {
   const reqBody = await request.json();
-  const secret_key = process.env.NEXT_PUBLIC_RECAPTCHA_SECRET_KEY;
+  const secret_key = process.env.NEXT_PUBLIC_RECAPTCHA_SECRET_KEY || 'secret_key_not_set';
 
   try {
     const url = `https://www.google.com/recaptcha/api/siteverify?secret=${secret_key}&response=${reqBody.token}`;
