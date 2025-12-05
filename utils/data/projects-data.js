@@ -9,6 +9,7 @@ export const projectsData = [
         demo: '',
         giturl: 'https://github.com/Balaraman-dev/Edu-Planner',
         liveurl: '',
+        deployed: '',
     },
 
     {

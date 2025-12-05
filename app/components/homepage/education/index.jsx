@@ -50,7 +50,7 @@ function Education() {
                         className="absolute bottom-0 opacity-80 w-full"
                       />
                       <div className="flex justify-center">
-                        <p className="text-xs sm:text-sm text-[#16f2b3]">
+                        <p className="text-xs sm:text-lg uppercase text-[#16f2b3]">
                           {education.duration}
                         </p>
                       </div>
@@ -59,7 +59,7 @@ function Education() {
                           <BsPersonWorkspace size={36} />
                         </div>
                         <div>
-                          <p className="text-base sm:text-xl mb-2 font-medium uppercase">
+                          <p className="text-base sm:text-xl mb-2 font-medium uppercase text-pink-500">
                             {education.title}
                           </p>
                           <p className="text-sm sm:text-base">{education.institution} </p>

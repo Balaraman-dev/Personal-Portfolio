@@ -26,7 +26,7 @@ function AboutSection() {
           <img
             src={personalData.profile}
             alt="Bala Profile Picture"
-            className="rounded-lg transition-all shadow-2xl shadow-pink-400 duration-1000 grayscale hover:grayscale-0 hover:scale-110 cursor-pointer w-[280px] h-[280px] object-cover"
+            className="rounded-lg transition-all shadow-2xl shadow-violet-500 duration-1000 grayscale hover:grayscale-0 hover:scale-110 cursor-pointer w-[280px] h-[280px] object-cover"
           />
         </div>
       </div>

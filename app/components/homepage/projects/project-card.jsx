@@ -1,6 +1,8 @@
 // @flow strict
 
 import * as React from 'react';
+import { IoLogoGithub} from "react-icons/io";
+import { FaExternalLinkAlt } from "react-icons/fa";
 
 function ProjectCard({ project }) {
 
@@ -10,15 +12,31 @@ function ProjectCard({ project }) {
         <div className="h-[1px] w-full bg-gradient-to-r from-transparent via-pink-500 to-violet-600"></div>
         <div className="h-[1px] w-full bg-gradient-to-r from-violet-600 to-transparent"></div>
       </div>
-      <div className="px-4 lg:px-8 py-3 lg:py-5 relative">
-        <div className="flex flex-row space-x-1 lg:space-x-2 absolute top-1/2 -translate-y-1/2">
+      <div className="px-4 lg:px-8 py-3 lg:py-5 flex justify-between items-center">
+        <div className="flex flex-row space-x-1 lg:space-x-2">
           <div className="h-2 w-2 lg:h-3 lg:w-3 rounded-full bg-red-400"></div>
           <div className="h-2 w-2 lg:h-3 lg:w-3 rounded-full bg-orange-400"></div>
           <div className="h-2 w-2 lg:h-3 lg:w-3 rounded-full bg-green-200"></div>
         </div>
-        <p className="text-center ml-3 text-[#16f2b3] text-base lg:text-xl">
+        <h3 className="text-center ml-3 text-[#16f2b3] text-base lg:text-xl">
           {project.name}
-        </p>
+        </h3>
+        <div className='flex gap-4'>
+          <a target="_blank" rel="noreferrer" href={project.giturl} className=''>
+              <IoLogoGithub
+                className="bg-violet-700 p-1 rounded-full hover:bg-gray-400 hover:scale-110 transition-all duration-300 text-black cursor-pointer"
+                size={30}
+              />
+          </a>
+          { project.liveurl.trim() && 
+          <a target="_blank" rel="noreferrer" href={project.liveurl} className=''>
+              <FaExternalLinkAlt 
+                className="bg-pink-500 p-2 rounded-lg hover:bg-gray-400 hover:scale-110 transition-all duration-300 text-black cursor-pointer"
+                size={30}
+              />
+          </a>
+          }
+        </div>
       </div>
       <div className="overflow-hidden border-t-[2px] border-indigo-900 px-4 lg:px-8 py-4 lg:py-8">
         <code className="font-mono text-xs md:text-sm lg:text-base">
@@ -61,7 +79,15 @@ function ProjectCard({ project }) {
             <span className="text-cyan-400">{' ' + project.description}</span>
             <span className="text-gray-400">,</span>
           </div>
+          {project.deployed.trim() && 
+            <div>
+              <span className="ml-4 lg:ml-8 mr-2 text-white">deployedOn:</span>
+              <span className="text-violet-500">{project.deployed}</span>
+              <span className="text-gray-400">,</span>
+            </div>          
+          }
           <div><span className="text-gray-400">{`};`}</span></div>
+          
         </code>
       </div>
     </div>
