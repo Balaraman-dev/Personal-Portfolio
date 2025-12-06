@@ -1,5 +1,3 @@
-
-
 import { skillsData } from "@/utils/data/skills";
 import { skillsImage } from "@/utils/skill-image";
 import Marquee from "react-fast-marquee";
