@@ -61,7 +61,7 @@ function Experience() {
                           <p className="text-sm sm:text-base font-semibold">
                             {experience.company}
                           </p>
-                          <p className="text-sm sm:text-base indent-10 py-2 text-justify ">{experience.description}</p>
+                          <p className="text-sm sm:text-base indent-10 py-2 text-justify hidden md:block">{experience.description}</p>
                         </div>
                       </div>
                     </div>

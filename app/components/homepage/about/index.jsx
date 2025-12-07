@@ -25,8 +25,8 @@ function AboutSection() {
         <div className="flex justify-center order-1 lg:order-2">
           <img
             src={personalData.profile}
-            alt="Bala Profile Picture"
-            className="rounded-lg transition-all shadow-2xl shadow-violet-500 duration-1000 grayscale hover:grayscale-0 hover:scale-110 cursor-pointer w-[280px] h-[280px] object-cover"
+            alt="Profile Picture"
+            className="rounded-lg transition-all shadow-2xl shadow-violet-500 duration-1000 md:grayscale hover:grayscale-0 grayscale-0 hover:scale-110 cursor-pointer w-[280px] h-[280px] object-cover"
           />
         </div>
       </div>

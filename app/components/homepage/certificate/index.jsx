@@ -9,7 +9,7 @@ import AnimationLottie from "../../helper/animation-lottie";
 
 function Certificate() {
   return (
-    <div id='blogs' className="w-[100%] relative z-50 border-t my-12 lg:my-24 border-[#25213b]">
+    <div id='blogs' className="w-[100%] relative z-50 border-t my-12 lg:mt-24 border-[#25213b]">
       <div className="w-[100px] h-[100px] bg-violet-100 rounded-full absolute top-6 left-[42%] translate-x-1/2 filter blur-3xl  opacity-20"></div>
 
       <div className="flex justify-center -translate-y-[1px]">
@@ -40,12 +40,7 @@ function Certificate() {
             </div>
           </div>
       </div>
-      <div className="flex justify-center -translate-y-[1px]">
-        <div className="w-3/4">
-          <div className="h-[1px] bg-gradient-to-r from-transparent via-violet-500 to-transparent  w-full" />
-        </div>
-      </div>
-    </div>
+         </div>
   );
 };
 

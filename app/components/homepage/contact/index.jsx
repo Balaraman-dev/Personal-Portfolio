@@ -10,27 +10,52 @@ import ContactForm from './contact-form';
 
 function ContactSection() {
   return (
-    <div id="contact" className="my-12 lg:my-16 relative mt-24 text-white">
-      <div className="hidden lg:flex flex-col items-center absolute top-24 -right-8">
-        <span className="bg-[#1a1443] w-fit text-white rotate-90 p-2 px-5 text-xl rounded-md">
-          CONTACT
-        </span>
-        <span className="h-36 w-[2px] bg-[#1a1443]"></span>
+    <div id="contact" className=" relative text-white py-16">
+        <div className="flex justify-center my-5 lg:py-8">
+        <div className="flex  items-center">
+          <span className="w-24 h-[2px] bg-[#1a1443]"></span>
+          <span className="bg-[#1a1443] w-fit text-white p-2 px-5 text-xl rounded-md">
+            Contact Me
+          </span>
+          <span className="w-24 h-[2px] bg-[#1a1443]"></span>
+        </div>
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
-        <ContactForm />
-        <div className="lg:w-3/4 ">
-          <div className="flex flex-col gap-5 lg:gap-9">
+       <img
+        src="/section.svg"
+        alt="Hero"
+        className="absolute top-0 -z-10 w-full"
+      />
+    
+      <div className="w-full gap-8 lg:gap-16 items-center">
+        {/* <ContactForm /> */}
+        <div className="lg:3/4 flex justify-end ">
+          <div className="flex flex-col  gap-4 lg:gap-7">
             <p className="text-sm md:text-xl flex items-center gap-3">
               <MdAlternateEmail
-                className=" bg-[#16f2b3] p-2 rounded-full hover:bg-[#8b98a5] hover:scale-110 transition-all duration-300 text-black cursor-pointer"
+                className=" bg-pink-500 p-2 rounded-full hover:bg-[#16f2b3] hover:scale-110 transition-all duration-300 text-black cursor-pointer"
                 size={36}
               />
               <span>{personalData.email}</span>
             </p>
+               <a target="_blank" rel="noreferrer" href={personalData.github} className='text-sm md:text-xl flex items-center gap-3'>
+                <IoLogoGithub
+                  className="bg-pink-500 p-2 rounded-full hover:bg-[#16f2b3] hover:scale-110 transition-all duration-300 text-black cursor-pointer"
+                  size={38}
+                />
+                <span>
+                {personalData.github}
+                </span>
+              </a> 
+              <a target="_blank" rel="noreferrer" href={personalData.linkedIn} className='text-sm md:text-xl flex items-center gap-3'>
+                <BiLogoLinkedin
+                  className="bg-pink-500 p-2 rounded-full hover:bg-[#16f2b3] hover:scale-110 transition-all duration-300 text-black cursor-pointer"
+                  size={38}
+                />
+                <span>{personalData.linkedIn}</span>
+              </a>
             <p className="text-sm md:text-xl flex items-center gap-3">
               <IoMdCall
-                className="bg-[#16f2b3] p-2 rounded-full hover:bg-[#8b98a5] hover:scale-110 transition-all duration-300 text-black cursor-pointer"
+                className="bg-pink-500 p-2 rounded-full hover:bg-[#16f2b3] hover:scale-110 transition-all duration-300 text-black cursor-pointer"
                 size={36}
               />
               <span>
@@ -39,29 +64,16 @@ function ContactSection() {
             </p>
             <p className="text-sm md:text-xl flex items-center gap-3">
               <CiLocationOn
-                className="bg-[#16f2b3] p-2 rounded-full hover:bg-[#8b98a5] hover:scale-110 transition-all duration-300 text-black cursor-pointer"
+                className="bg-pink-500 p-2 rounded-full hover:bg-[#16f2b3] hover:scale-110 transition-all duration-300 text-black cursor-pointer"
                 size={36}
               />
               <span>
                 {personalData.address}
               </span>
             </p>
+           
           </div>
-          <div className="mt-8 lg:mt-16 w-full justify-center flex items-center gap-5 lg:gap-10">
-              <a target="_blank" rel="noreferrer" href={personalData.github}>
-                <IoLogoGithub
-                  className="bg-violet-600 p-3 rounded-full hover:bg-gray-400 hover:scale-110 transition-all duration-300 text-black cursor-pointer"
-                  size={48}
-                />
-              </a>
-              <a target="_blank" rel="noreferrer" href={personalData.linkedIn}>
-                <BiLogoLinkedin
-                  className="bg-violet-600 p-3 rounded-full hover:bg-gray-400 hover:scale-110 transition-all duration-300 text-black cursor-pointer"
-                  size={48}
-                />
-              </a>
           </div>
-        </div>
       </div>
     </div>
   );
