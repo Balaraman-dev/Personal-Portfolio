@@ -1,11 +1,11 @@
 {
-  "name": "developer-portfolio",
-  "description": "Portfolio of Abu Said",
+  "name": "balaraman-portfolio",
+  "description": "Balaraman Portfolio",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "vite",
-    "build": "npm run build",
+    "build": "vite build",
     "start": "vite preview",
     "lint": "eslint . --ext .js,.jsx"
   },
